@@ -1,26 +1,38 @@
+// import React, {useState} from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css'
 
-function App() {
+import Routes from './routes';
+// import { Route } from 'react-router-dom';
+
+// import Logon from './pages/Logon';
+
+/* import Header from './Header'; */
+/*não preciso colocar o /index porque sempre que
+importamos uma pasta, ele vai procurar pelo arquivo index
+*/
+
+/* function App() {
+  //useState retorna um array com 2 posições
+  //a primeira com o valor e a outra com função de atualização
+  //Array[valor,funcao]
+
+  const [counter, setCounter] = useState(0);
+
+  function increment() {
+    setCounter(counter+1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Omnistack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Incrementar</button>
     </div>
   );
-}
+} */
 
-export default App;
+  export default function App() {
+    return (
+      <Routes/>
+    );
+  }
